@@ -3,7 +3,6 @@ const emailInput = form.elements.email;
 const messageInput = form.elements.message;
 
 const localStorageKey = 'feedback-form-state';
-
 const dataLocalStorage = JSON.parse(localStorage.getItem(localStorageKey));
 
 messageInput.value = dataLocalStorage?.message ?? '';
